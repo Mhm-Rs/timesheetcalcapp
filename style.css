@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-green: #0cA614;
+    --light-green: #effbf0;
+    --dark-purple: #6a52ff;
+    --light-purple: #f3f1ff;
+    --dark-orange: #d2781a;
+    --light-orange: #fdf5eb;
+    --dark-blue: #2998ff;
+    --light-blue: #f0f7ff;
+    --dark-red: #cf2e2e;
+    --light-red: #f5efef;
+    --dark-gray: #676b6e;
+    --light-gray: #f6f6f6;
+}
+
+.blue {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+}
+
+.green {
+    background-color: var(--light-green);
+    color: var(--dark-green);
+}
+
+.red {
+    background-color: var(--light-red);
+    color: var(--dark-red);
+}
+
+.purple {
+    background-color: var(--light-purple);
+    color: var(--dark-purple)
+}
+
+.orange {
+    background-color: var(--light-orange);
+    color: var(--dark-orange);
+}
+
+.gray{
+    background-color: var(--light-gray);
+    color:var(--dark-gray);
+}
+
+body{
+    background-color: var(--light-purple);
+}
+
+.container{
+    width:1000px;
+    position:relative;
+    margin:200px auto 0 auto;
+    background-color: var(--dark-purple);
+    padding:6rem 6rem 1rem 1rem;
+    border-radius: 1rem;
+    border:1px solid rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.3);
+}
+
+/*Person */
+.person{
+    /* background-color: red; */
+    position: absolute;
+    top: -70px;
+    left:-1px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.person-avatar{
+    height:150px;
+    width: 150px;
+    border-radius: 50%;
+    /* background-color: blue; */
+    background: url("https://avatars.dicebear.com/api/open-peeps/seed1234567.svg");
+}
+
+.person-name{
+    color:white;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.4);
+    font-size: 2.5rem;
+}
+
+.week{
+    color:white;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.4);
+}
+
+section,form{
+    display: flex;
+    gap: 15px;
+}
+
+section.tableBody{
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+input{
+    max-width: 110px;
+    outline: none;
+    border:none;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.15rem 0.75rem;
+    text-align: center;
+}
+
+.tableBody input:not(.tableBody input:first-of-type){
+    margin-right:30px;
+}
+
+
+.tableHead input{
+    height:50px;
+}
+
+.tableFooter{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tableFooter #totalWorkedHours{
+    margin-right: 120px;
+}
+
+.btn{
+    background-color: inherit;
+    border: 1px solid var(--light-gray);
+    font-size: 1.1rem;
+    cursor:pointer;
+    font-weight: 500;
+    color:white;
+    padding:0.15rem 0.75rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: var(--light-green);
+    color:var(--dark-green);
+}
+
+.btn:active{
+    transform: calc(0.95);
+}
+
+.btn-green{
+    background-color: var(--dark-green);
+    color:#eee;
+}

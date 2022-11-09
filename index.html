@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Timesheet calculator App</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="person">
+            <div class="person-avatar"></div>
+            <h1 class="person-name">Mohaman Raïs</h1>
+        </header>
+        <section class="tableHead">
+            <input type="text" class="orange" value="Days" disabled />
+            <input type="text" class="blue" value="Start Work" disabled />
+            <input type="text" class="green" value="Start Break" disabled />
+            <input type="text" class="green" value="End Break" disabled />
+            <input type="text" class="blue" value="End Work" disabled />
+            <input type="text" class="purple" value="Hours / Days" disabled />
+        </section>
+        <section class="tableBody">
+            <div class="tr"></div>
+            <div class="tr"></div>
+            <div class="tr"></div>
+            <div class="tr"></div>
+            <div class="tr"></div>
+        </section>
+        <section class="tableFooter">
+            <input class="red" value ="Total" disabled>
+            <input class="red" value ="Work Hours" id="totalWorkedHours" disabled>
+        </section>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
